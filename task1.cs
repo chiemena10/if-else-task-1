@@ -8,7 +8,7 @@ namespace task1
 {
     internal class Program
     {
-        static void Max(float number)
+        static void Main(string[] args)
         {
             int num1 = 0;
             int num2 = 0;
@@ -34,10 +34,6 @@ namespace task1
                 Console.WriteLine("both number are the same");
                 Console.ReadLine();
             }
-        }
-        static void Main(string[] args)
-        {
-         
         }
     }
 }
