@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double temp = 0.0;
+
+            Console.WriteLine("what is the temperature");
+            temp = double.Parse(Console.ReadLine());
+
+            if (temp >= 100)
+            {
+                Console.WriteLine("gaseuos");
+                Console.ReadLine();
+            }
+            else if ((temp >= 1) && (temp <= 99))
+            {
+                Console.WriteLine("liquid");
+                Console.ReadLine();
+            }
+            else if (temp < 1)
+            {
+                Console.WriteLine("solid");
+                Console.ReadLine();
+            }
+        }
+    }
+}
