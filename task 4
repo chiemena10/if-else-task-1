@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string job = "";
+
+            Console.WriteLine("what is your job");
+            job = Console.ReadLine();
+
+            if (job == "Engineer")
+            {
+                Console.WriteLine("The engineer has been, and is, a maker of hisory.");
+                Console.ReadLine();
+            }
+            else if (job == "Developer")
+            {
+                Console.WriteLine("Logical thinking, passion and perseverance is the paint on your palette.");
+                Console.ReadLine();
+            }
+            else if (job == "Analyst")
+            {
+                Console.WriteLine("seeing what other people can't see gives you great vision.");
+                Console.ReadLine();
+            }
+            else
+            {
+                Console.WriteLine("I'm sorry. We could not find a quote for your job.");
+                Console.ReadLine();
+            }
+        }
+    }
+}
