@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string poundToEuro = "";
+            double pounds = 0.0;
+            double euro = 0.0;
+            double CONVERSION = 1.2;
+
+            Console.WriteLine("if you wish to convert pounds to euros type \"yes\". \n if you wish to convert euros to pounds type \"no\"");
+            poundToEuro = Console.ReadLine();
+
+            if (poundToEuro == "yes")
+            {
+                pounds = double.Parse("how many pounds do you wish to convert");
+                euro = pounds * CONVERSION;
+                Console.WriteLine("[0] is the amount of euros you would recieve", euro);
+            }
+            else if (poundToEuro == "no")
+            {
+                euro = double.Parse("how many euros do you wish to convert");
+                pounds = euro / CONVERSION;
+                Console.WriteLine("[0] is the amount of euros you would recieve", pounds);
+            }
+            else
+            {
+                Console.WriteLine("please enter a valid input");
+            }
+        }
+    }
+}
