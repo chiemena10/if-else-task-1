@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace task2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int minorFaults = 0;
+
+            Console.WriteLine("how many pionts did yyou score on your driving test? ");
+            minorFaults = int.Parse(Console.ReadLine());
+
+            if (minorFaults < 16)
+            {
+                Console.WriteLine("pass");
+                Console.ReadLine();
+            }
+
+            else if (minorFaults > 15)
+            {
+                Console.WriteLine("fail");
+                Console.ReadLine();
+            }
+        }
+    }
+}
